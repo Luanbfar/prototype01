@@ -32,8 +32,8 @@ header {
 }
 
 .content {
-  max-width: auto;
-  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -96,4 +96,8 @@ th {
 
 tr {
   background-color: #f2f2f2;
+}
+
+#sobre {
+  margin-right: 0px;
 }
