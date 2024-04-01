@@ -31,8 +31,8 @@ header {
 }
 
 .content {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: auto;
+  margin: 0;
   padding: 20px;
 }
 
