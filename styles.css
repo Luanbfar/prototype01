@@ -5,11 +5,24 @@ body {
 }
 
 header {
+  display: flex;
+  align-items: right;
   background-color: #333;
   color: #fff;
   padding: 10px;
   text-align: center;
   width: auto;
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  font-weight: bold !important;
+}
+
+main h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-links {
@@ -32,26 +45,47 @@ header {
   border-radius: 5px;
 }
 
+.header-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+}
+
+.header-login button {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .header-links {
+    display: flex;
+  }
+  .header-login button {
+    display: none;
+  }
+}
+
 .content {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.card {
+.card-primary {
   background-color: #f4f4f4;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.card h2 {
+.card-primary h2 {
   color: #333;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.card p {
+.card-primary p {
   color: #666;
   font-size: 16px;
   line-height: 1.6;
@@ -114,24 +148,24 @@ header {
 }
 
 .table1 table {
-  border-collapse: collapse;
-  width: 41.5vw;
-  margin-bottom: 20px;
+  border-collapse: collapse !important;
+  width: 39.5vw !important;
+  margin-bottom: 20px !important;
 }
 
 .table1 th,
 td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+  border: 1px solid #ddd !important;
+  padding: 8px !important;
+  text-align: left !important;
 }
 
 .table1 th {
-  background-color: #f2f2f2;
+  background-color: #f2f2f2 !important;
 }
 
 .table1 tr {
-  background-color: #f2f2f2;
+  background-color: #f2f2f2 !important;
 }
 
 #img1 {
@@ -147,4 +181,47 @@ td {
 
 .audio-sobre {
   padding: 30px;
+}
+
+.login-body {
+  background-color: grey;
+}
+
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  width: auto;
+  height: 45vh;
+  margin: auto;
+  margin-top: 10%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px #333;
+  background-color: white;
+}
+
+.form-check-input:checked {
+  background-color: grey;
+}
+
+#login-form button {
+  background-color: #333;
+  border-color: #333;
+}
+
+#login-form button:hover {
+  background-color: grey;
+  border-color: grey;
+}
+
+#login-form button:active {
+  background-color: grey;
+  border-color: grey;
+}
+
+#login-form button:focus {
+  background-color: grey;
+  border-color: grey;
 }
